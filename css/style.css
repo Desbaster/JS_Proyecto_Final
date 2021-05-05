@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../img/piggy.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* intro */
+main {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 12vh;
+    color: #f09920;
+}
+
+#logo {
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    color: #f09920;
+}
+
+.entrar {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    padding: 10px;
+    background-color: black;
+    border-radius: 50px;
+    outline-style: none;
+    cursor:pointer;
+    box-shadow: 2px 2px 2px 1px #000000cc;
+}
+
+button a.btn-intro {
+    font-family: 'Lobster', cursive;
+    color:#f09920;
+    font-size: 2rem;
+    text-decoration-line: none;
+}
+
+button a.btn-intro:active {
+    color:#e0edd8;
+}
+
+.intro {
+    background: #252525;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    background: #252525;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.intro-text {
+    color:#f09920;
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+
+.hide {
+    background: #252525;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+/* app */
+
+.hide-app{
+    background: linear-gradient(to left bottom, #3d3d3de6,#ffffffcc);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+#header {
+    background: #ffffffe6;
+    border-radius: 5px;
+    font-size: 35px;
+}
+
+a.header {
+    font-family: 'Lobster', cursive;
+    color: #252525;
+    text-decoration-line: none;
+}
+
+.pigIcon {
+    width: 40px;
+    height: 35px;
+}
+
+#dolar {
+    background-color: #f09920e6;
+    border-bottom: 1px solid #e0edd8;
+    color: #252525;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.error {
+    background: #ce483b;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 600;
+    color: #e0edd8;
+    line-height: 30px;
+}
+
+#btnIngresar {
+    background-color: #f09920e6;
+    font-weight: 600;
+    color: #252525;
+    border-color: #e0edd8;
+    padding: 10px;
+    border-radius: 50px;
+    outline-style: none;
+    cursor:pointer;
+    box-shadow: 2px 2px 2px 1px #000000cc;
+    /* margin-top: 8px; */
+}
+
+#btnIngresar:active {
+    color:#e0edd8;
+}
+
+.titulo {
+    border-bottom: 1px solid #e0edd8;
+    background-color: #ffffffb3;
+    border-radius: 5px;
+    color: #252525;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 6px;
+}
+
+#totalesJs {
+    margin-top: 8px;
+}
+
+#ingresosJs {
+    background-color: #008000b3;
+    color: #252525;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 5px;
+    border-bottom: 1px solid white;
+}
+
+#gastosJs {
+    background-color: #ff0000b3;
+    color: #252525;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 5px;
+    border-bottom: 1px solid white;
+
+}
+
+p.titulo {
+    margin-bottom: 8px;
+    border-bottom: 1px solid white;
+}
+
+h2.text-center {
+    background-color: #ffffffb3;
+    color: #252525;
+    border-radius: 5px;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+}
+
+#tabla {
+    overflow: scroll;
+    max-height: 80vh;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#tabla::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#tabla {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.input-group {
+    padding-bottom: 8px;
+}
+.input-group-text {
+    background: #f09920e6;
+    color: #252525;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+.btn {
+    line-height: 0.8;
+    padding: 5px;
+}
+
+.p-footer {
+    color: #252525;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: -1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-footer {
+    text-shadow: 1px 1px 1px #6d6605c4;
+}
